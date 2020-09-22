@@ -14,6 +14,27 @@
         "question": "Como posso doar para os animais universitarios?",
         "answer": "Voce pode visitar nossa pagina de doacoes para ver as formas de doacao disponiveis e que sejam melhor para voce",
         "v": 0
+      },
+      {
+        "_id": "3",
+        "theme": "Cuidados",
+        "question": "Como faço para não matar o animal de fome?",
+        "answer": "Dê comida a ele.",
+        "v": 0
+      },
+      {
+        "_id": "4",
+        "theme": "Cuidados",
+        "question": "Devo levar em qual periodo de tempo o animal ao veterinário",
+        "answer": "Depende do estado de saúde do animal. Se estiver bastante doente, devê-se levar imediatamnete. Caso esteja bem, leve a cada três meses(isso é só um teste não baseado em dados comprovados)",
+        "v": 0
+      },
+      {
+        "_id": "5",
+        "theme": "Doação",
+        "question": "Posso doar no crédito 12x sem juros?",
+        "answer": "Só aceitamos deposito bancário.",
+        "v": 0
       }
     ]
   }

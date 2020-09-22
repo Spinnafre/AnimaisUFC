@@ -1,13 +1,15 @@
-let themes = Array.from(document.getElementsByClassName("action"));
-let questions = Array.from(document.getElementsByClassName("question"));
+function onFaqLoad(){
+    let themes = Array.from(document.getElementsByClassName("action"));
+    let questions = Array.from(document.getElementsByClassName("question"));
 
-themes.forEach(element => {
-    element.addEventListener("click", showQuestions);
-});
-questions.forEach(element => {
-    element.getElementsByTagName("button")[0]
-            .addEventListener("click", showAnswer);
-});
+    themes.forEach(element => {
+        element.addEventListener("click", showQuestions);
+    });
+    questions.forEach(element => {
+        element.getElementsByTagName("button")[0]
+                .addEventListener("click", showAnswer);
+    });
+}
 
 function showQuestions(){
     let node = this.parentNode.getElementsByClassName("questions")[0];

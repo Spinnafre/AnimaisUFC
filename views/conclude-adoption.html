@@ -19,22 +19,22 @@
                     </a>
                 </div>
                 <div class="sections">
-                    <a href="page-landing.html" class="">
+                    <a href="page-landing.html">
                         <h1>Home</h1>
                     </a>
-                    <a href="adoption-page.html" class="actual-page">
+                    <a href="adoption-page.html">
                         <h1>Adoção</h1>
                     </a>
-                    <a href="temporary-home-page.html" class="">
+                    <a href="temporary-home-page.html">
                         <h1>Lar Temporário</h1>
                     </a>
-                    <a href="ufc-animals-page.html" class="">
+                    <a href="ufc-animals-page.html">
                         <h1>Animais UFC</h1>
                     </a>
-                    <a href="#" class="">
+                    <a href="#">
                         <h1>Doação</h1>
                     </a>
-                    <a href="faq.html" class="">
+                    <a href="faq.html">
                         <h1>FAQ</h1>
                     </a>
                 </div>
@@ -44,24 +44,19 @@
            <div class="details-contact">
                <div class="animal-details">
                    <img src="../public/images/Animais/cachorro.jpeg" alt="Foto">
-                    <h4><strong>Nome: </strong>Chico</h4>
-                    <p><strong>Espécie: </strong>cachorro</p>
+                    <h4><strong>Nome: </strong></h4>
+                    <p><strong>Espécie: </strong></p>
                     <div class="side-elements">
-                        <p><strong>Idade: </strong>1 ano</p>
-                        <p><strong>Porte: </strong>pequeno</p>
+                        <p><strong>Idade: </strong></p>
+                        <p><strong>Porte: </strong></p>
                     </div>
                     <div class="side-elements">
-                        <p><strong>Sexo: </strong>macho</p>
-                        <p><strong>Raça: </strong>desconhecida</p>
+                        <p><strong>Sexo: </strong></p>
+                        <p><strong>Raça: </strong></p>
                     </div>
                     <h4><strong>Descrição</strong></h4>
                     <div class="description">
-                        <p>
-                            Sempre bem amigável e brincalhão, 
-                            morde as vezes, mas somente para brincadeiras. Precisa de 
-                            cuidados pois esteve doente recentemente. Gosta de dormir 
-                            junto a pessoas e em lugares calmos. 
-                        </p>
+                        <p></p>
                     </div>
                </div>
                <div class="procedure-contact">
@@ -78,7 +73,7 @@
                    <div class="contact">
                        <h4>Formulário de adoção</h4>
                        <h5>Seus dados</h5>
-                       <form id="contact-forms" action="">
+                       <form id="contact-forms" method="GET">
                            <div class="input-block">
                                <label for="name" class="superior-label">Nome: </label>
                                <input type="text" name="name" id="name"/>
@@ -91,13 +86,15 @@
                                <label for="cell-number" class="superior-label">Número de telefone: </label>
                                <input type="text" name="cell-number" id="cell-number">
                            </div>
+                           <div class="buttons">
+                                <a href="adoption-page.html">
+                                    <button type="button" class="cancel">Voltar ao catálogo</button>
+                                </a>    
+                            <button type="submit" form="contact-forms" class="confirm" name="animal">
+                                Contactar voluntário
+                                </button>
+                            </div>
                        </form>
-                       <div class="buttons">
-                           <button class="cancel">Voltar ao catálogo</button>
-                           <button type="submit" form="contact-forms" class="confirm">
-                               Contactar voluntário
-                            </button>
-                       </div>
                    </div>
                </div>
            </div>
@@ -128,5 +125,6 @@
             </div>
         </div>
     </div>
+    <script src="../public/js/conclude.js"></script>
 </body>
 </html>

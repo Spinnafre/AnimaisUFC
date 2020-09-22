@@ -16,6 +16,7 @@ filter = {
     age:[]  
 }
 
+
 function FilterAnimals(){
     if(this.checked){
         filter[this.name].push(this.value);
@@ -27,81 +28,68 @@ function FilterAnimals(){
     showAnimals()
 }
 
+
 function showAnimals(){
+    let url = "../public/data/animals.json";
+
     Array.from(document.getElementsByClassName("animal")).
             forEach(element => element.
             remove())
-
-    fetch("../public/data/animals.json")
+    
+    fetch(url)
     .then((response) => response.json()
     ).then(function(response){
         const data = response.filter(filterJson);
-        data.forEach(element => {
-            const animal = animalTemplate.cloneNode(true);
-            animal.value = (element._id)
-            animal.getElementsByTagName("h6")[0].innerHTML = element.name;
-            if(element.port == "Pequeno"){
-                animal.getElementsByTagName("p")[0].classList
-                        .add("actual-port");
-            }
-            if(element.port == "Médio"){
-                animal.getElementsByTagName("p")[1].classList
-                        .add("actual-port");
-            }
-            if(element.port == "Grande"){
-                animal.getElementsByTagName("p")[2].classList
-                        .add("actual-port");
-            }
-            animal.getElementsByTagName("img")[0].src = element.image;
-            if(element.sex == "Feminino"){
-                animal.getElementsByTagName("img")[1].src = 
-                        "../public/images/animais/feminino.svg";
-            }
-            if(element.sex == "Masculino"){
-                animal.getElementsByTagName("img")[1].src =
-                        "../public/images/animais/masculino.svg";
-            }
-            animalsArea.getElementsByTagName("form")[0].appendChild(animal);
-        });
+            changeAnimalsHTML(data)
     });
 }
 
-function filterJson(element){
-    let species = true;
-    let sex = true;
-    let port = true;
-    let age = true;
+
+function filterJson(animal){
+    const validation = {
+        species: true,
+        sex: true,
+        port: true,
+        age: true
+    }
+    const fileName = location.pathname.split("/").slice(-1)[0]
+
+    if(!((fileName == "adoption-page.html" && animal.category == "Adoção") 
+        || (fileName == "temporary-home-page.html" && animal.category == "Lar temporário") 
+        || (fileName == "ufc-animals-page.html" && animal.category == "Animais ufc"))){
+            return false;
+    }
 
     for(let i = 0;i < filter.species.length; i++){
-        if(element.species == filter.species[i]){
-            species = true
+        if(animal.species == filter.species[i]){
+            validation.species = true
             break;
         }
-        species = false;
+        validation.species = false;
     }
-    if(!species){
+    if(!validation.species){
         return false
     }
 
     for(let i = 0;i < filter.sex.length; i++){
-        if(element.sex == filter.sex[i]){
-            sex = true
+        if(animal.sex == filter.sex[i]){
+            validation.sex = true
             break;
         }
-        sex = false;
+        validation.sex = false;
     }
-    if(!sex){
+    if(!validation.sex){
         return false
     }
 
     for(let i = 0;i < filter.port.length; i++){
-        if(element.port == filter.port[i]){
-            port = true
+        if(animal.port == filter.port[i]){
+            validation.port = true
             break;
         }
-        port = false;
+        validation.port = false;
     }
-    if(!port){
+    if(!validation.port){
         return false
     }
 
@@ -121,15 +109,46 @@ function filterJson(element){
             ageRange = [9, 10, 11, 12, 13 , 14, 15 ,16, 17];
         }
         for (let j = ageRange[0]; j <= ageRange[ageRange.length -1]; j++){
-            if(element.age == j){
-                age = true
+            if(animal.age == j){
+                validation.age = true
                 return true;
             }
-            age = false;
+            validation.age = false;
         }
     }
-    if(!age){
+    if(!validation.age){
         return false
     }
     return true;
+}
+
+
+function changeAnimalsHTML(data){
+    data.forEach(element => {
+        const animal = animalTemplate.cloneNode(true);
+        animal.value = (element._id)
+        animal.getElementsByTagName("h6")[0].innerHTML = element.name;
+        if(element.port == "Pequeno"){
+            animal.getElementsByTagName("p")[0].classList
+                    .add("actual-port");
+        }
+        if(element.port == "Médio"){
+            animal.getElementsByTagName("p")[1].classList
+                    .add("actual-port");
+        }
+        if(element.port == "Grande"){
+            animal.getElementsByTagName("p")[2].classList
+                    .add("actual-port");
+        }
+        animal.getElementsByTagName("img")[0].src = element.image;
+        if(element.sex == "Feminino"){
+            animal.getElementsByTagName("img")[1].src = 
+                    "../public/images/animals/feminino.svg";
+        }
+        if(element.sex == "Masculino"){
+            animal.getElementsByTagName("img")[1].src =
+                    "../public/images/animals/masculino.svg";
+        }
+        animalsArea.getElementsByTagName("form")[0].appendChild(animal);
+    });
 }

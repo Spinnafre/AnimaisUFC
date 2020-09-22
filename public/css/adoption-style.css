@@ -1,14 +1,9 @@
-.content{
-    width: calc(80% + 7rem);
-    margin: 0 10%;
-}
-
 .content-header{
     margin-bottom: 2.5rem;
 }
 
 .content-header header{
-    width: calc(100% - 3.5rem);
+    width: calc(100%);
     padding: 1rem;
 
     background: #fff;
@@ -22,11 +17,15 @@
 .content-section{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .content-section .filters{
+    min-width: 12rem;
+    width: 12rem;
+    margin-right: 2.5rem;
     margin-bottom: 2.5rem;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     border-radius: .625rem;
 
     background: #fff;
@@ -38,8 +37,8 @@
 }
 
 .content-section .animals{
-    
-    padding-left: 3rem;
+    width: calc(100% - 12rem - 2.5rem);
+    margin-right: -3.5rem;
 }
 
 .content-section .animals header{
@@ -52,7 +51,6 @@
 }
 
 .content-section .animals section #animals-form{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
