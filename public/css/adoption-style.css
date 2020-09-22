@@ -1,0 +1,138 @@
+.content{
+    width: calc(80% + 7rem);
+    margin: 0 10%;
+}
+
+.content-header{
+    margin-bottom: 2.5rem;
+}
+
+.content-header header{
+    width: calc(100% - 3.5rem);
+    padding: 1rem;
+
+    background: #fff;
+    border-radius: 0.625rem;
+}
+
+.content-header header h3{
+    font-size: 1.125rem;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-section .filters{
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: .625rem;
+
+    background: #fff;
+}
+
+.filter-label,
+.filter-input{
+    display: inline;
+}
+
+.content-section .animals{
+    
+    padding-left: 3rem;
+}
+
+.content-section .animals header{
+    margin-bottom: 2.25rem;
+}
+
+.content-section .animals header h4{
+    font-size: 2.25rem;
+    color: #494949;
+}
+
+.content-section .animals section{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button{
+    border: 0px solid #000;
+    cursor: pointer;
+}
+
+.animals .animal{
+    margin-right: 3.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 10rem;
+    border-radius: .625rem;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    transition: background 0.2s;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    
+}
+
+.animals .animal:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.animals .animal > img{
+    width: 100%;
+    height: 7.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.animals .animal h6{
+    margin-left: 0.5rem;
+    max-width: 9rem;
+
+    color: #EF7946;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.animals .animal .porte-sex{
+    margin: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.animals .animal .porte-sex .porte{
+    display: flex;
+    flex-direction: row;
+}
+
+.animals .animal .porte-sex .porte p{
+    margin-right: 0.5rem;
+    padding: 0.125rem 0.25rem;
+    border: 1px solid #000;
+    border-radius: .25rem;
+
+    opacity: 0.3;
+}
+
+.animals .animal .porte-sex .porte p.actual-porte{
+    opacity: 1;
+}
+
+.animals .animal .porte-sex .porte img{
+    width: 1.125rem;
+    height: 1.125rem;
+}
