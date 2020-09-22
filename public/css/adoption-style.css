@@ -51,7 +51,7 @@
     color: #494949;
 }
 
-.content-section .animals section{
+.content-section .animals section #animals-form{
 
     display: flex;
     flex-direction: row;
@@ -81,19 +81,29 @@ button{
     transition: background 0.2s;
 
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
-    
 }
 
 .animals .animal:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.animals .animal > img{
-    width: 100%;
+.photo{
+    width: 10rem;
     height: 7.5rem;
-
     margin-bottom: 0.5rem;
+}
+
+.animals .animal .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.animals .animal .name-port{
+    height: 38%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .animals .animal h6{
@@ -104,6 +114,7 @@ button{
 
     font-size: 1rem;
     font-weight: 700;
+    text-align: left;
 }
 
 .animals .animal .porte-sex{
@@ -112,6 +123,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .animals .animal .porte-sex .porte{
@@ -128,7 +140,7 @@ button{
     opacity: 0.3;
 }
 
-.animals .animal .porte-sex .porte p.actual-porte{
+.animals .animal .porte-sex .porte p.actual-port{
     opacity: 1;
 }
 
