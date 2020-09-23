@@ -9,7 +9,7 @@ Primeiro, você precisa ter o <kbd>[NodeJS](https://nodejs.org/en/download/)</kb
 
 Se você estiver utilizando o **Linux**, você pode optar por instalar o **Node** através do gerênciador de versões para facilitar o processo de mudança da versão do **Node**, quando for necessário.
 
-Você pode optar também por utilizar o **yarn** no lugar do **npm**. Você pode instalar clicando nesse <kbd>[link][yarn]</kbd>, ou através do <kbd>[asdf]</kbd>.
+Você pode optar também por utilizar o **yarn** no lugar do **npm**. 
 
 Após ter o **Node** instalado, instale as dependências do **React** de forma global, utilizando os comandos:
 
