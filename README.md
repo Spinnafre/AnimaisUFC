@@ -69,3 +69,22 @@ $ npm start
 ```
 
 > Se o browser não abrir automaticamente, acesse: http://localhost:3000.
+
+
+<!-- Badges -->
+
+[github_issues_badge]: https://img.shields.io/github/issues/x0n4d0/ecoleta?color=green
+
+[repository_license_badge]: https://img.shields.io/github/license/x0n4d0/ecoleta
+
+[node_version_badge]: https://img.shields.io/badge/node-12.17.0-green
+
+[npm_version_badge]: https://img.shields.io/badge/npm-6.14.4-red
+
+[web_react_badge]: https://img.shields.io/badge/web-react-blue
+
+[mobile_react-native_badge]: https://img.shields.io/badge/mobile-react%20native-blueviolet
+
+[server_nodejs_badge]: https://img.shields.io/badge/server-nodejs-important
+
+<!-- Techs -->
