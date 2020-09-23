@@ -60,6 +60,11 @@ inicialmente foi desenvolvido só a versão do editor no React.
         <img width="200" height="180" src="https://avatars1.githubusercontent.com/u/61296141?s=460&v=4">
       </a>
     </td>
+    <td>
+      <a href="https://github.com/TheSupereor" target="_blank">
+        <img width="200" height="180" src="https://avatars0.githubusercontent.com/u/55772578?s=460&u=c8e9be836d7600323085ab0839408511d8059434&v=4">
+      </a>
+    </td>
   </tr>
 </table>
 
