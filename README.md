@@ -62,7 +62,7 @@ $ npm start
 
 ```sh
 # Abrindo o terminal no diretório do website:
-$ cd frontend
+$ cd frontend/my-app
 
 # Executando o website no modo de desenvolvimento:
 $ npm start
