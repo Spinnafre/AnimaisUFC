@@ -40,7 +40,7 @@ inicialmente foi desenvolvido só a versão do edito no React.
 - [Mongoose](https://mongoosejs.com)
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-## **:star2: AGRADECIMENTOS**
+## **:star2: COLABORADORES**
 
 <div align=center>
 
