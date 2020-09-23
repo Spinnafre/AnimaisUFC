@@ -51,12 +51,12 @@ inicialmente foi desenvolvido só a versão do editor no React.
   </tr>
   <tr align=center>
     <td>
-      <a href="https://github.com/Spinnafre">
+      <a href="https://github.com/Spinnafre" target="_blank">
         <img width="200" src="https://avatars2.githubusercontent.com/u/61525268?s=460&u=b66a852f0a5808ec463be41555fe28c2ff6d3e1a&v=4">
       </a>
     </td>
     <td>
-      <a href="https://github.com/Erizon18">
+      <a href="https://github.com/Erizon18" target="_blank">
         <img width="200" height="180" src="https://avatars1.githubusercontent.com/u/61296141?s=460&v=4">
       </a>
     </td>
