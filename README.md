@@ -5,8 +5,9 @@
 
 <h3 align="left">
 
-Foram criados 3 branches (master,extern, react),no brancher react está localizado o backend(Node e Mongodb) e frontend(React), 
-inicialmente foi desenvolvido só a versão do editor no React.
+Foram criados 3 branches (master,extern, react),no brancher react está localizado o backend(Node e Mongodb) e frontend(React) da versão do editor, 
+inicialmente foi desenvolvido só a versão do editor no React. Nas brancher extern está localizado os arquivos html+css+js do usuário externo, em breve irá
+ser passado para React intregrando com outras api's e servidor.
 
 </h3>
 
