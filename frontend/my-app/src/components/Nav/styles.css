@@ -1,0 +1,72 @@
+.headerNav-Container{
+    /* height: 634px; */
+    width: 156px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    border: solid 2px #E7E7E7;
+    border-radius: 10px;
+    padding: 50px 100px;
+    
+}
+.Header-Nav-Links{
+    /* width: 180px; */
+}
+.Logo-Container{
+    width: 100%;
+}
+.Logo-Container img{
+    width: 100%;
+}
+.nav-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 80px;
+    height: 300px;
+}
+.nav-Container .content-link svg{
+    font-size: 41px;
+    color: #757575;
+}
+.nav-Container a{
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-decoration: none;
+}
+.nav-Container a {
+    color: #757575;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.nav-Container a svg{
+    font-size: 40px;
+}
+
+.content-link-selected svg,.content-link-selected #animais{
+    color: #EF7946;
+
+}
+.content-link-selected svg,.content-link-selected #config{
+    color: #EF7946;
+
+}
+.content-link-selected svg,.content-link-selected #FAQ{
+    color: #EF7946;
+
+}
+.content-link-selected svg,.content-link-selected #doacoes{
+    color: #EF7946;
+
+}
+

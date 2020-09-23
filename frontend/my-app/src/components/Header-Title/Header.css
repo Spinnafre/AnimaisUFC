@@ -1,0 +1,48 @@
+.header{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 0;
+
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    grid-area: Aheader;
+
+}
+/* input{
+    height: 34px;
+    border: solid 2px #E7E7E7;
+    border-radius: 10px;
+
+    padding-left: 20px;
+} */
+.header h1{
+    font-size: 2em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.header h1 svg{
+    color: #EF7946;
+    font-size: 40px;
+    padding: 0;
+}
+
+.header>p{
+    color: #ffffff;
+    font-size: 1.7em;
+    
+    
+}
+.header span{
+    color: #EF7946;
+    padding-left: 10px;
+}
+#time{
+    width: 351px;
+    font-size: 20px;
+}
+
