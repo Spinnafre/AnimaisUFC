@@ -1,0 +1,17 @@
+{
+    "message": "Conseguir pegar todos as doações",
+    "data": [
+        {
+            "_id": "5f6161ea33aa2422aca320e5",
+            "donationType": "Product",
+            "name": "Davi Silva",
+            "neighborhood": "Planalto Horizonte",
+            "street": "Rua joão bento",
+            "complement": "Próximo ao clube da lan",
+            "telephone": "9994-9821",
+            "number": 40,
+            "ref": "Na esquina com a perede vermelha",
+            "__v": 0
+        }
+    ]
+}

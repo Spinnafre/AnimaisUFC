@@ -1,0 +1,105 @@
+.content-header{
+    margin-bottom: 2.5rem;
+}
+
+.content-header header{
+    padding: 1rem;
+
+    background: #fff;
+    border-radius: 0.625rem;
+}
+
+.content-header header h3{
+    font-size: 1.125rem;
+}
+
+.questions-themes{
+    display: flex;
+    flex-direction: column;
+}
+
+.action{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    border: 0px solid;
+    margin-bottom: 1rem;
+    border-radius: .625rem;
+
+    color: #fff;
+    background: #EE5B32;
+
+    cursor: pointer;
+}
+
+.theme-chosen{
+    background: #C84D2B;
+}
+
+.questions{
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+.questions.visible{
+    display: block;
+}
+
+.questions .question{
+    width: 80vw;
+    margin-bottom: 1rem;
+    border: 1px solid #E7E7E7;
+    border-radius: 0 0 .625rem  .625rem;
+
+    background: #FFF;
+
+    transition: all .2s;
+}
+
+.questions .question button{
+    width: 80vw;
+    padding: 1rem;
+    border: 0px solid;
+    border-radius: .625rem;
+
+    color: #000000;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+.questions .question button img{
+    transition: all .2s ease-in-out;
+}
+
+.answer-visible{
+    box-shadow: 2px 2px 3px;
+}
+
+.answer-visible img{
+    transform: rotate(180deg);
+}
+
+.question button h3,
+.question .answer p{
+    font-size: .875rem;
+}
+
+.questions .question .answer{
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.questions .question .answer.visible{
+    display: initial;
+}
+
+.questions .question .answer.visible p{
+    padding: 1rem;
+}

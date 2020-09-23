@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais para adoção</title>
+    <link rel="stylesheet" href="../public/css/main.css"/>
+    <link rel="stylesheet" href="../public/css/forms.css"/>
+    <link rel="stylesheet" href="../public/css/adoption-style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header class="page_header">
+                <div class="logo">
+                    <a href="./page-landing.html" id="logo_AU">
+                        <img src="../public/images/logo_5.svg" alt="Logo">
+                        <img src="../public/images/image_17.svg" alt="Animais Universitários" id="nome">
+                    </a>
+                </div>
+                <div class="sections">
+                    <a href="page-landing.html" class="">
+                        <h1>Home</h1>
+                    </a>
+                    <a href="adoption-page.html" class="actual-page">
+                        <h1>Adoção</h1>
+                    </a>
+                    <a href="temporary-home-page.html" class="">
+                        <h1>Lar Temporário</h1>
+                    </a>
+                    <a href="ufc-animals-page.html" class="">
+                        <h1>Animais UFC</h1>
+                    </a>
+                    <a href="#" class="">
+                        <h1>Doação</h1>
+                    </a>
+                    <a href="faq.html" class="">
+                        <h1>FAQ</h1>
+                    </a>
+                </div>
+            </header>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <header>
+                    <h3>Os animais que vivem na UFC moram lá, pois não tem para 
+                        onde ir e precisam de amor e carinho. Eles são animais 
+                        bondosos que podem estar com medo mas abra seu coração 
+                        para eles que eles faram o mesmo com você. Veja alguns 
+                        animais disponíveis para adoção abaixo.</h3>
+                </header>
+            </div>
+            <div class="content-section">
+                <div class="filters">
+                    <h4>Filtrar</h4>
+                    <form id="filters" action="">
+                        <div class="filter-category">
+                            <h5>Espécie</h5>
+                            <div class="input-block">
+                                <input type="checkbox" id="dog" value="Cachorro" name="species">
+                                <label for="dog" class="filter-label">Cachorro</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="cat" value="Gato" name="species">
+                                <label for="cat" class="filter-label">Gato</label>
+                            </div>
+                        </div>
+                        <div class="filter-category">
+                            <h5>Sexo</h5>
+                            <div class="input-block">
+                                <input type="checkbox" id="female" value="Feminino" name="sex">
+                                <label for="female" class="filter-label">Fêmea</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="male" value="Masculino" name="sex">
+                                <label for="male" class="filter-label">Macho</label>
+                            </div>
+                        </div>
+                        <div class="filter-category">
+                            <h5>Porte</h5>
+                            <div class="input-block">
+                                <input type="checkbox" id="small" value="Pequeno" name="port">
+                                <label for="small" class="filter-label">Pequeno</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="medium" value="Médio" name="port">
+                                <label for="medium" class="filter-label">Médio</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="big" value="Grande" name="port">
+                                <label for="big" class="filter-label">Grande</label>
+                            </div>
+                        </div>
+                        <div class="filter-category">
+                            <h5>Idade</h5>
+                            <div class="input-block">
+                                <input type="checkbox" id="0-2" value="0-2" name="age">
+                                <label for="0-2" class="filter-label">0 - 2 anos</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="3-5" value="3-5" name="age">
+                                <label for="3-5" class="filter-label">3 - 5 anos</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="6-8" value="6-8" name="age">
+                                <label for="6-8" class="filter-label">6 - 8 anos</label>
+                            </div>
+                            <div class="input-block">
+                                <input type="checkbox" id="9+" value="9+" name="age">
+                                <label for="9+" class="filter-label">9 anos ou mais</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="animals">
+                    
+                    <header>
+                        <h4>Adoção</h4>
+                    </header>
+                    <section>
+                        <form action="animal-details.html" method="GET" id="animals-form">
+                            <button class="animal" type="submit" name="animal">
+                                <div class="photo">
+                                    <img src="" alt="Foto">
+                                </div>
+                                <div class="name-port">
+                                    <h6>Chico da depravação</h6>
+                                    <div class="porte-sex">
+                                        <div class="porte">
+                                            <p>P</p>
+                                            <p>M</p>
+                                            <p>G</p>
+                                        </div>
+                                        <img src="" alt="Sexo">
+                                    </div>
+                                </div>
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_int">
+                <div class="grid-item collumn-1">
+                    <a href="#">Menu</a>
+                    <a href="#">Adoção</a>
+                    <a href="#">Lar Temporário</a>
+                    <a href="#">Animais UFC</a>
+                </div>
+                
+                <div class="grid-item collumn-4">
+                    <a href="#">Doe para a causa</a>
+                    <a href="#">FAQ</a>
+                </div>
+    
+                <div class="grid-item logo-item collumn-8">
+                    <a href="#"><img src="../public/images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="../public/images/instagram.svg" alt="Instagram"></a>
+                </div>
+                
+                <div class="collumn-12 logo-footer">
+                    <img src="../public/images/AU_logo.svg" alt="Animais Universitários">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/adoption.js"></script>
+</body>
+</html>

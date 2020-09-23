@@ -1,0 +1,85 @@
+.content .details-header{
+    width: 83.3%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .details-header img{
+    height: 20rem;
+    border-radius: .625rem;
+}
+
+.content .details-header .details{
+    width: 36.6%;
+    padding: 1rem;
+    border-radius: .625rem;
+
+    background: #fff;
+}
+.content .details-header .details h4{
+    margin-bottom: 1.5rem;
+
+    font-size: 1.5rem;
+}
+
+.content .details-header .details p{
+    margin-bottom: 1rem;
+    width: 12.5rem;
+    max-width: 12.5rem;
+    
+    font-size: 1.125rem;
+}
+
+.content .details-header .details .side-elements{
+    display: flex;
+    margin-right: 1rem;
+}
+
+.content .details-header .details .side-elements > p{
+    margin-right: 1rem;
+}
+
+.content .description{
+    width: 83.3%;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .625rem;
+    
+    background: #fff;
+}
+
+.content .description p{
+    font-size: 1.125rem;
+}
+
+.buttons{
+    width: 83.3%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 15.5rem;
+    height: 3rem;
+    border-radius: .625rem;
+    border: 0px solid #333;
+}
+
+.buttons .cancel{
+    background: #FAFAFA;
+    border: 1px solid #878787;
+}
+
+.buttons .confirm{
+    color: #fff;
+    background: #EE5B32;
+    border: 1px solid #EE5B32;
+}
