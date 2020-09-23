@@ -1,6 +1,6 @@
 # AnimaisUFC
 <h5>Backend:</h5> Davi Silva (Spinnafre)
-<h5>Frontend:</h5> Davi silva(React), Narciso e Erick
+<h5>Frontend:</h5> Davi Silva (React), Narciso e Erick
 
 
 <h3 align="left">
