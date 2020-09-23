@@ -48,6 +48,7 @@ inicialmente foi desenvolvido só a versão do editor no React.
   <tr align=center>
     <th><strong>Davi Silva</strong></th>
     <th><strong>Erick Gomes</strong></th>
+    <th><strong>Narciso</strong></th>
   </tr>
   <tr align=center>
     <td>
