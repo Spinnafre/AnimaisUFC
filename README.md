@@ -7,7 +7,7 @@ Backend: Davi Silva (Spinnafre), Frontend (React):Davi silva, Narciso e Erick
 
 Primeiro, você precisa ter o <kbd>[NodeJS](https://nodejs.org/en/download/)</kbd> instalado na sua máquina. 
 
-Se você estiver utilizando o **Linux**, você pode optar por instalar o **Node** através do gerênciador de versões <kbd>[asdf]</kbd> para facilitar o processo de mudança da versão do **Node**, quando for necessário.
+Se você estiver utilizando o **Linux**, você pode optar por instalar o **Node** através do gerênciador de versões para facilitar o processo de mudança da versão do **Node**, quando for necessário.
 
 Você pode optar também por utilizar o **yarn** no lugar do **npm**. Você pode instalar clicando nesse <kbd>[link][yarn]</kbd>, ou através do <kbd>[asdf]</kbd>.
 
@@ -43,7 +43,7 @@ $ npm install
 $ yarn
 ```
 
-Veja os arquivos **`package.json`** do <kbd>[commitlint](./package.json)</kbd>, <kbd>[server](./sources/server/package.json)</kbd>, <kbd>[website](./sources/website/package.json)</kbd> e <kbd>[mobile](./sources/mobile/package.json)</kbd>.
+> Veja a parte de **scripts {}** do arquivo <kbd>[package.json](https://github.com/Spinnafre/AnimaisUFC/tree/react/frontend/my-app)</kbd> para saber quais scripts estão disponíveis.
 
 ### Utilizando o Server
 
@@ -56,7 +56,7 @@ $ npm start
 
 ```
 
-> Veja a parte de **scripts {}** do arquivo <kbd>[package.json](./sources/server/package.json)</kbd> para saber quais scripts estão disponíveis.
+> Veja a parte de **scripts {}** do arquivo <kbd>[package.json](https://github.com/Spinnafre/AnimaisUFC/blob/react/backend/package.json)</kbd> para saber quais scripts estão disponíveis.
 
 ### Utilizando o Website
 
@@ -73,18 +73,10 @@ $ npm start
 
 <!-- Badges -->
 
-[github_issues_badge]: https://img.shields.io/github/issues/x0n4d0/ecoleta?color=green
+[web_react_badge]: https://github.com/Spinnafre/AnimaisUFC/tree/react/frontend/my-app
 
-[repository_license_badge]: https://img.shields.io/github/license/x0n4d0/ecoleta
-
-[node_version_badge]: https://img.shields.io/badge/node-12.17.0-green
-
-[npm_version_badge]: https://img.shields.io/badge/npm-6.14.4-red
-
-[web_react_badge]: https://img.shields.io/badge/web-react-blue
-
-[mobile_react-native_badge]: https://img.shields.io/badge/mobile-react%20native-blueviolet
-
-[server_nodejs_badge]: https://img.shields.io/badge/server-nodejs-important
+[server_nodejs_badge]: https://github.com/Spinnafre/AnimaisUFC/tree/react/backend
+https://github.com/Spinnafre/AnimaisUFC/blob/react/backend/package.json
+[server_nodejs_badge]: https://github.com/Spinnafre/AnimaisUFC/tree/react/backend
 
 <!-- Techs -->
