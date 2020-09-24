@@ -73,15 +73,43 @@
     border: 0px solid #333;
 }
 
+.buttons button{
+    width: 15.5rem;
+    height: 2.25rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 0px solid #333;
+}
+
 .buttons .cancel{
     background: #FAFAFA;
     border: 1px solid #878787;
+
+    transition: background .2s;
+    transition: border .2s;
+}
+
+.buttons .cancel:hover{
+    background: #DCDCDC;
+}
+
+.buttons .cancel:active{
+    border: 1px solid #ABABAB;
+
+    background: #ABABAB;
 }
 
 .buttons .confirm{
     color: #fff;
     background: #EE5B32;
-    border: 1px solid #EE5B32;
+}
+
+.buttons .confirm:hover{
+    background: #FF8A48;
+}
+
+.buttons .confirm:active{
+    background: #C3391A;
 }
 
 .buttons .confirm.invisible{

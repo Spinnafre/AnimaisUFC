@@ -1,0 +1,210 @@
+<html></html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/donation-style.css">
+    <title>Document</title>
+</head>
+
+<script>
+    var coll = document.getElementsByClassName("botao");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+
+</script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <header class="page_header">
+                <div class="logo">
+                    <a href="index.html" id="logo_AU">
+                        <img src="../public/images/logo_5.svg" alt="Logo">
+                        <img src="../public/images/image_17.svg" alt="Animais Universitários" id="nome">
+                    </a>
+                </div>
+                <div class="sections">
+                    <a href="index.html">
+                        <h1>Home</h1>
+                    </a>
+                    <a href="adoption-page.html">
+                        <h1>Adoção</h1>
+                    </a>
+                    <a href="temporary-home-page.html">
+                        <h1>Lar Temporário</h1>
+                    </a>
+                    <a href="ufc-animals-page.html">
+                        <h1>Animais UFC</h1>
+                    </a>
+                    <a href="donation.html" class="actual-page">
+                        <h1>Doação</h1>
+                    </a>
+                    <a href="faq.html">
+                        <h1>FAQ</h1>
+                    </a>
+                </div>
+            </header>
+        </div>
+        <div class="content">
+            <div class="introducao">
+                <h3>
+                    O Animais Universitários é um grupo independente sem fins lucrativos. 
+                    Com isso, para que possamos continuar ajudando os animais com rações,
+                    remédios, castração, entre outros serviços, precisamos da sua doação.
+                    Você pode ajudar os animais doando tanto dinheiro quanto produtos 
+                    (como rações, remédios) para algum de nossos voluntários disponíveis 
+                    perto de você.
+                    </h3>
+                <p></p>
+                <h3>
+                    Aceitamos diversos bancos e estamos presentes em várias partes da 
+                    cidade para receber doações. Agradecemos suas contribuição!
+                </h3>
+            </div>
+            <div class="doacao">
+                <div class="titulo">
+                    <h3>Doação de produtos</h3>
+                </div>
+                <div class="passos">
+                    <div class="passo">
+                        <img src="/public/images/donations/mapa.svg" alt="Mapa com pata">
+                        <h4>
+                            Procure na lista abaixo o melhor lugar para doar pessoalmente.
+                        </h4>
+                    </div>
+                    <div class="passo">
+                        <img src="/public/images/donations/telefoneAu.svg" alt="Celular AU">
+                        <h4>
+                            Contate o voluntario que for de mais facil acesso para 
+                            você entregar.
+                        </h4>
+                    </div>
+                    <div class="passo">
+                        <img src="/public/images/donations/EntregaProduto.svg" alt="Entregador de produto"/>
+                        <h4>
+                            Encontre o voluntário e ajude nossa causa!
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="opcoes">
+                    <button class="opcao">Messejana
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+
+                    <button class="opcao">Abc
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+
+                    <button class="opcao">Maracanaú
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button> 
+                    <button class="opcao">São Gerardo
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+                    
+                    <button class="opcao">Jardim Cearense
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+
+                    <button class="opcao">Caucaia
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+                        
+                </div>
+                <div class="donation-info">
+                    <h4>Caucaia</h4>
+                    <div class="donation-options">
+                        <p>
+                            Rua: rua João Souza, 43<br>
+                            Nome: Maria Garibalda<br>
+                            Contato: (85) 94233-1242
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="doacao">
+                <div class="titulo">
+                    <h3>Doação Bancária</h3>
+                </div>
+
+                <div class="passos">
+                    <div class="passo">
+                        <img src="/public/images/donations/Bandeiras.svg" alt="Bandeiras de banco">
+                        <h4>Procure na lista abaixo a melhor opção de doar para uma de nossas contas bancarias.</h4>
+                    </div>
+                    <div class="passo">
+                        <img src="/public/images/donations/dadosBanco.svg" alt="Imagem de dados de banco aleatórios">
+                        <h4>Verifique as informações corretamente.</h4>
+                    </div>
+                    <div class="passo">
+                        <img src="/public/images/donations/cartaoAU.svg" alt="Cartão AU">
+                        <h4>Deposite na conta bancaria de sua escolha e pronto!</h4>
+                    </div>
+                </div>
+
+            
+                <div class="opcoes">
+                    <button class="opcao">Bradesco
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+                    <button class="opcao">Banco do Brasil
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+                    <button class="opcao">Caixa
+                        <img src="/public/images/seta.svg" alt="Seta" class="botao">
+                    </button>
+                </div>
+                <div class="donation-info">
+                    <h4>Bradesco</h4>
+                    <div class="donation-options">
+                        <p>
+                            Rua: rua João Souza, 43<br>
+                            Nome: Maria Garibalda<br>
+                            Contato: (85) 94233-1242
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_int">
+            <div class="grid-item collumn-1">
+                <a href="index.html">Menu</a>
+                <a href="adoption-page.html">Adoção</a>
+                <a href="temporary-home-page.html">Lar Temporário</a>
+                <a href="ufc-animals-page.html">Animais UFC</a>
+            </div>
+            
+            <div class="grid-item collumn-4">
+                <a href="donation.html">Doe para a causa</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+
+            <div class="grid-item logo-item collumn-8">
+                <a href="https://www.facebook.com/animaisuniversitarios"><img src="../public/images/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/animaisuniversitarios/"><img src="../public/images/instagram.svg" alt="Instagram"></a>
+            </div>
+            
+            <div class="collumn-12 logo-footer">
+                <img src="../public/images/AU_logo.svg" alt="Animais Universitários">
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/donation.js"></script>
+</body>
+</html>

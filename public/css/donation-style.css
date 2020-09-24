@@ -1,0 +1,132 @@
+.introducao{
+    margin-bottom: 1.5rem;
+    border-radius: 0.625rem;
+    background-color: #ffffff;
+}
+
+.introducao h3{
+    padding: 1rem;
+
+    font-size: 1.125rem;
+}
+
+.doacao{
+    width: 70%;
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.625rem;
+
+
+    background-color: #ffffff;
+}
+
+.doacao .titulo{
+    margin-bottom: 3rem;
+
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.doacao .passos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doacao .passos .passo{
+    width: 30%;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.doacao .passos img{
+    width: 100%;
+    height: 12rem;
+}
+
+.doacao .passo h4{
+    padding: 1rem 1rem;
+    margin-top: 0;
+    border-radius: 0.625rem;
+    
+    background-color: #c4c4c4;
+}
+
+.opcoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.opcoes .opcao{
+    width: 30%;
+    padding: 0.5rem;
+    margin: 0 0 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #E7E7E7;
+    border-radius: 0.625rem;  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #F4F4F4;
+
+    transition: all .2s;
+    
+    cursor: pointer;
+}
+
+.active, .opcoes .opcao:hover{
+    background-color: #E2E2E2;
+}
+
+.opcoes .opcao:active{
+    background: #C9C9C9;
+}
+
+.opcoes .opcao.btn-drop{
+    background: #c4c4c4;;
+}
+
+.opcoes .opcao.btn-drop:hover{
+    background: #E2E2E2;
+}
+
+.opcoes .opcao img{
+    transition: all 0.2s;
+}
+
+.opcoes .opcao.btn-drop img{
+    transform: rotate(180deg);
+}
+
+.donation-info {   
+    display: none;
+    padding: 1rem;
+
+    background-color: #adadad;
+}
+
+.donation-info.donations-visible{
+    display: block;
+}
+
+.donation-info h4{
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+}
+
+.donation-info .donation-options{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donation-info .donation-options p{
+    margin-bottom: 1rem;
+}

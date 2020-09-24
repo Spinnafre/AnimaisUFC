@@ -60,8 +60,12 @@ body{
     transition: background 0.2s;
 }
 
-.page_header .sections a:hover{
-    background-color: #F08152;
+.page_header .sections a h1{
+    transition: color .2s;
+}
+
+.page_header .sections a h1:hover{
+    color: #C3391A;
 }
 
 .page_header .sections a.actual-page{
@@ -69,7 +73,7 @@ body{
 }
 
 .page_header .sections a.actual-page:hover{
-    background: #C75231;
+    background: #C3391A;
 }
 
 .page_header .sections a h1{
@@ -84,11 +88,6 @@ body{
 .footer{
     width: 100vw;
     padding: 1rem 0;
-    
-    position: static;
-    bottom: 0;
-
-    overflow: hidden;
     
     background-color: #F08152;
 }

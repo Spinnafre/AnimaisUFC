@@ -1,0 +1,269 @@
+a{
+	text-decoration: none;
+	color: #000000;
+}
+a:visited{
+	color: #000000;
+}
+
+.textoProjeto {
+	margin: 0 8rem 1rem;
+	padding: 1rem;
+	border-radius: 0.625rem;
+
+    background-color: #ffffff;
+}
+
+.textoProjeto h2{
+
+	margin-bottom: 1rem;
+	
+    font-size: 3rem;
+    text-align: center;
+}
+
+.textoProjeto h4{
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.fotos{
+	margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+	justify-content: space-around;
+}
+
+.fotos img{
+    margin-right: 0.90625rem;
+    width: 20.75rem;
+}
+
+.fotos .img12:last-child{
+    margin-right: 0;
+}
+
+.cards {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    display: flex;
+	font-weight: normal;
+	
+	
+}
+
+.cards .card{
+    padding-top: 2rem;
+    margin-right: 0.90625rem;
+	border-radius: 0.625rem;
+
+    text-align: center;
+
+	background-color: #ffffff;
+	
+	transform: all .2s;
+
+	box-shadow: 2px 2px 2px;
+}
+
+.cards .card:hover{
+	box-shadow: 5px 5px 5px;
+	cursor: pointer;
+}
+
+.cards .card h3{
+    font-size: 1.125rem;
+    font-weight: normal;
+    padding-top: 1.375rem;
+    padding-bottom: 1.125rem;
+}
+
+.cards .card h4{
+    font-weight: normal;
+    font-size: 0.75rem;
+    padding: 0 1.125rem 1.875rem 1.125rem;
+}
+
+.cards .card:last-child{
+    margin-right: 0;
+}
+
+.cards img{
+    width: 4.8125rem;
+    height: 4.8125rem;
+}
+.images-container {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin: 2rem auto;
+	max-width:800px
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 37.5rem;
+}	
+
+#proparallax img {
+	position: absolute;
+	width: 50rem;
+	height: 37.5rem;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+@keyframes parallax_one { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 37.5rem;
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	33.33% { /* .imageunloaded */
+		height: 37.5rem;
+		width: 0rem;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 37.5rem;
+		width: 0rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;		
+	}
+}
+
+@keyframes parallax_two { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	66.67% { /* .imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
+}
+
+@keyframes parallax_three { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	100% { /* imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+}
+
+#proparallax img.one{
+	animation-name: parallax_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.two {
+	animation-name: parallax_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.three {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
