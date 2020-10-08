@@ -1,0 +1,131 @@
+.content-header{
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.content-header img{
+    margin-right: 2rem;
+}
+
+  
+.detailAnimal .content-header.details-header{
+    width: 83.3%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailAnimal .content-header  img{
+    height: 20rem;
+    border-radius: .625rem;
+}
+
+.details{
+    width: 50%;
+    padding: 1rem;
+    border-radius: .625rem;
+
+    background: #fff;
+}
+.details h4{
+    margin-bottom: 1.5rem;
+
+    font-size: 1.5rem;
+}
+
+.details p{
+    margin-bottom: 1rem;
+    width: 12.5rem;
+    max-width: 12.5rem;
+    
+    font-size: 1.125rem;
+}
+
+.content-header .details-header .details .side-elements{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.detailAnimal .content-header .details-header .details .side-elements > p{
+    margin-right: 1rem;
+}
+
+.description{
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .625rem;
+    
+    background: #fff;
+}
+
+.description p{
+    font-size: 1.125rem;
+}
+
+.buttons{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button{
+    width: 15.5rem;
+    height: 3rem;
+    border-radius: .625rem;
+    border: 0px solid #333;
+}
+
+.buttons button{
+    width: 15.5rem;
+    height: 2.25rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 0px solid #333;
+}
+
+.buttons .cancel{
+    background: #FAFAFA;
+    border: 1px solid #878787;
+
+    transition: background .2s;
+    transition: border .2s;
+}
+
+.buttons .cancel:hover{
+    background: #DCDCDC;
+}
+
+.buttons .cancel:active{
+    border: 1px solid #ABABAB;
+
+    background: #ABABAB;
+}
+
+.buttons .confirm{
+    color: #fff;
+    background: #EE5B32;
+}
+
+.buttons .confirm:hover{
+    background: #FF8A48;
+}
+
+.buttons .confirm:active{
+    background: #C3391A;
+}
+
+.buttons .confirm.invisible{
+    display: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}

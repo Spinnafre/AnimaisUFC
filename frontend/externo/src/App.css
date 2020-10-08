@@ -1,0 +1,526 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+.App {
+  text-align: center;
+}
+/* INDEX CSS */
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+a:visited{
+	color: #000000;
+}
+
+.textoProjeto {
+	margin: 0 8rem 1.5rem;
+	padding: 1rem;
+	border-radius: 0.625rem;
+
+    background-color: #ffffff;
+}
+
+.textoProjeto h2{
+
+	margin-bottom: 1rem;
+	
+    font-size: 3rem;
+    text-align: center;
+}
+
+.textoProjeto h4{
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+.fotos{
+	margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+	justify-content: space-around;
+}
+
+.fotos img{
+    margin-right: 0.90625rem;
+    width: 19rem;
+}
+
+.fotos .img12:last-child{
+    margin-right: 0;
+}
+
+.cards {
+	margin-left: 8rem;
+	margin-right: 8rem;
+	margin-bottom: 1.5rem;
+    display: flex;
+	font-weight: normal;
+	
+	
+}
+
+.cards .card{
+    padding-top: 2rem;
+    margin-right: 1.5rem;
+	border-radius: 0.625rem;
+
+    text-align: center;
+
+	background-color: #ffffff;
+	
+	transform: all .2s;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cards .card:hover{
+	box-shadow: 0 10px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	cursor: pointer;
+}
+
+.cards .card h3{
+    font-size: 1.125rem;
+    font-weight: normal;
+    padding-top: 1.375rem;
+    padding-bottom: 1.125rem;
+}
+
+.cards .card h4{
+    font-weight: normal;
+    font-size: 0.75rem;
+    padding: 0 1.125rem 1.875rem 1.125rem;
+}
+
+.cards .card:last-child{
+    margin-right: 0;
+}
+
+.cards img{
+    width: 4.8125rem;
+}
+.images-container {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin: 2rem auto;
+	max-width:800px
+	
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 30.5rem;
+	/* border-radius: 0.625rem; */
+}	
+
+#proparallax img {
+	position: absolute;
+	width: 50rem;
+	height: 37.5rem;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+@keyframes parallax_one { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 37.5rem;
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	33.33% { /* .imageunloaded */
+		height: 37.5rem;
+		width: 0rem;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 37.5rem;
+		width: 0rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;		
+	}
+}
+
+@keyframes parallax_two { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	66.67% { /* .imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
+}
+
+@keyframes parallax_three { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	100% { /* imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+}
+
+#proparallax img.one{
+	animation-name: parallax_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.two {
+	animation-name: parallax_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.three {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+
+/* ----------- */
+
+
+
+
+/* main css */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+
+}
+body{
+	height: 100vh;
+}
+#root{
+	height: 100vh;
+  
+
+  background: url("/public/images/background.svg")  top left repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+
+  background-image: url("./images/background.svg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+
+}
+
+.container{
+	/* overflow-x: hidden; */
+	/* height: 100%; */
+	
+
+}
+.content{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100vw;
+  margin-bottom: 1.5rem;
+
+  background-color: #ffffff;
+  border-bottom: 0.125rem solid #c4c4c4;
+}
+
+.header .page_header{
+  width: 80%;
+  height: 5rem;
+  margin: 0 auto;
+
+  padding: 0.625rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page_header .logo a{
+  display: flex;
+  align-content: center;
+}
+
+.page_header .sections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page_header .sections a{
+  padding: 0.5rem 1.5625rem;
+  border-radius: 0.625rem;
+
+  transition: background 0.2s;
+}
+
+.page_header .sections a h1{
+  transition: color .2s;
+}
+
+.page_header .sections a h1:hover{
+  color: #C3391A;
+}
+
+.page_header .sections a.actual-page{
+  background: #EE5B32;
+}
+
+.page_header .sections a.actual-page:hover{
+  background: #C3391A;
+}
+
+.page_header .sections a h1{
+  color: #000;
+  font-size: 1rem;
+}
+
+.page_header .sections a.actual-page h1{
+  color: #fff;
+}
+
+.footer{
+  width: 100vw;
+  padding: 1rem 0;
+  
+  background-color: #F08152;
+
+}
+
+.footer .footer_int{
+  width: 80%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0,1fr));
+  column-gap: 8px;
+
+  margin: 0 auto;
+}
+
+.footer_int .grid-item{
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.footer_int .grid-item a{
+  color: #fff;
+}
+
+.footer_int .logo-item{
+  display: flex;
+}
+
+.footer_int .logo-item a{
+  margin-right: 2rem;
+}
+
+.footer_int .grid-item a{
+  height: 1rem;
+}
+
+.footer_int .logo-footer{
+  justify-self: end;
+}
+
+.footer_int .logo-footer img{
+  width: 8rem;  
+}
+
+.collumn-1{
+  grid-column: 1 / 3;
+}
+
+.collumn-2{
+  grid-column: 2;
+}
+.collumn-3{
+  grid-column: 3;
+}
+.collumn-4{
+  grid-column: 4 / 6;
+}
+.collumn-5{
+  grid-column: 5;
+}
+.collumn-6{
+  grid-column: 6;
+}
+.collumn-7{
+  grid-column: 7;
+}
+.collumn-8{
+  grid-column: 8 / 10;
+}
+.collumn-9{
+  grid-column: 9;
+}
+.collumn-10{
+  grid-column: 10;
+}
+.collumn-11{
+  grid-column: 11;
+}
+.collumn-12{
+  grid-column: 11 / span 2;
+}
+
+/* FORMS */
+
+h4{
+    margin-bottom: 1.5rem;
+
+    /* font-size: 1.5rem; */
+    font-weight: 700;
+}
+
+.filter-category{
+	margin-bottom: 1.5rem;
+	
+}
+
+.filter-category h5{
+    margin-bottom: 1rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.input-block{
+    margin-bottom: 1rem;
+	align-items: center;
+	
+	display: flex;
+	align-items: center;
+
+	
+}
+
+.input-block input[type=checkbox]{
+    
+}
+
+.input-block input[type=checkbox]{
+	margin-left: 1.125rem;
+	background: #F4F4F4;
+	border: 1px solid #E7E7E7; 
+	width: 1rem;
+}
+
+.input-block .superior-label{
+    display: block;
+}

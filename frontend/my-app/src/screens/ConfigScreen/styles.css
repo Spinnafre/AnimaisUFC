@@ -1,0 +1,58 @@
+.Content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Handle-Link-Back{
+  position: absolute;
+
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+
+  font-size: 28px;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  text-decoration: none;
+  color: #3b3a3a;
+}
+.Handle-Link-Back svg{
+  font-size: 30px;
+  margin-left: 10px;
+
+}
+.Content section input {
+  border: none;
+  border-bottom: 2px solid #757575;
+  height: 50px;
+  color: #262626;
+  padding-left: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+.Content section label {
+  font: 700 19px Roboto, sans-serif;
+  color: #757575;
+  display: flex;
+  align-items: center;
+}
+
+.Content section label svg{
+  margin-right: 5px;
+}
+.Content section form #password-label {
+  margin-top: 20px;
+}
+.button-container-config {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}

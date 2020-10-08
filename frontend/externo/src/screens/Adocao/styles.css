@@ -1,0 +1,185 @@
+.content-headerPage{
+    margin-bottom: 2.5rem;
+}
+
+.content-headerPage header{
+    width: calc(100%);
+    padding: 1rem;
+
+    background: #fff;
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+}
+.content-headerPage .container-img{
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.content-headerPage .container-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.625rem;
+    margin:0;
+    border-top-right-radius: 0.625rem;
+
+}
+.content-headerPage .container-img h1{
+    position:absolute;
+    z-index: 50;
+    background-color:none;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: 6.25rem;
+
+    color: #ffffff;
+    opacity: 0.75;
+    
+}
+.content-headerPage header h3{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-section .filters{
+    min-width: 12rem;
+    width: 12rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: .625rem;
+
+    background: #fff;
+}
+
+.filter-label,
+.filter-input{
+    display: inline;
+    margin-left: 0.3125rem;
+}
+
+.content-section .animals{
+    width: calc(100% - 12rem - 2.5rem);
+    margin-right: -3.5rem;
+}
+
+.content-section .animals header{
+    margin-bottom: 2.25rem;
+}
+
+.content-section .animals header h4{
+    font-size: 2.25rem;
+    color: #494949;
+}
+
+.content-section .animals section #animals-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button{
+    border: 0px solid #000;
+    cursor: pointer;
+}
+
+.animals .animal{
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 10rem;
+    border-radius: .625rem;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    transition: background 0.2s;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.animals .animal:hover{
+    box-shadow: 0 10px 9px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	cursor: pointer;
+}
+
+.photo{
+    width: 100%;
+    height: 7.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.animals .animal .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.animals .animal .name-port{
+    height: 38%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.animals .animal h6{
+    margin-left: 0.5rem;
+    max-width: 9rem;
+
+    color: #EF7946;
+
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.animals .animal .porte-sex{
+    margin: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.animals .animal .porte-sex img{
+    width:1.2rem;
+    height: 1.2rem;
+}
+
+.animals .animal .porte-sex .porte{
+    display: flex;
+    flex-direction: row;
+}
+
+.animals .animal .porte-sex .porte p{
+    margin-right: 0.5rem;
+    padding: 0.125rem 0.25rem;
+    border: 1px solid #000;
+    border-radius: .25rem;
+
+    opacity: 0.3;
+    
+}
+.port-selected{
+    opacity: 1;
+}
+.port-delected{
+}
+
+.animals .animal .porte-sex .porte p.actual-port{
+    opacity: 1;
+}
+
+.animals .animal .porte-sex .porte img{
+    
+}

@@ -1,0 +1,175 @@
+p{
+    font-size: 1.125rem;
+}
+
+.animal-details, 
+.procedure, 
+.contact{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .625rem;
+
+    background: #fff;
+}
+
+.content .details-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.animal-details{
+    margin-right: 2rem;
+    width: 170%;
+    height: 100%;
+}
+
+.details-contact .animal-details img{
+    max-width: 15rem;
+    margin-bottom: 1rem;
+    border-radius: .625rem;
+}
+
+.details-contact .animal-details h4{
+    margin-bottom: 1.5rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.details-contact .animal-details p{
+    margin-bottom: 1rem;
+}
+
+.details-contact .animal-details .side-elements{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+strong{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+strong span{
+    font-weight: 400;
+
+}
+.details-contact .animal-details .side-elements > p{
+    /* width: 20rem; */
+    /* margin-right: 2rem; */
+}
+
+.animal-details .description-animal{
+    /* height: 10rem; */
+    padding: 0;
+    /* width: 100%; */
+    /* border: 1px solid #E7E7E7; */
+    border: none;
+    /* border-radius: .625rem; */
+
+    background: #ffffff;
+}
+
+
+
+h4{
+    margin-bottom: 2rem;
+
+    font-size: 1.5rem;
+    font-weight:700
+}
+
+.contact h5{
+    margin-bottom: 1.5rem;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.5rem;
+
+    background: #ECECEC;
+}
+
+input:focus{
+    border: 1px solid #EE5B32;
+
+    background: #FFFFFF;
+}
+
+.buttons-confirm{
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons-confirm button{
+    width: 15.5rem;
+    height: 2.25rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 0px solid #333;
+}
+
+.buttons .cancel{
+    background: #FAFAFA;
+    border: 1px solid #878787;
+
+    transition: background .2s;
+    transition: border .2s;
+}
+
+.buttons .cancel:hover{
+    background: #DCDCDC;
+}
+
+.buttons .cancel:active{
+    border: 1px solid #ABABAB;
+
+    background: #ABABAB;
+}
+
+.buttons-confirm .confirm{
+    color: #fff;
+    background: #EE5B32;
+}
+
+.buttons .confirm:hover{
+    background: #FF8A48;
+}
+
+.buttons .confirm:active{
+    background: #C3391A;
+}
+
+.image-container{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 1rem;
+}
+
+.input-block-conclude{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+.input-block-conclude input{
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+}
+.input-block-conclude label{
+    font-weight: 500;
+}
+.info-animal{
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0;
+}

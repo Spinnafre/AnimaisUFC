@@ -1,0 +1,144 @@
+.MyOrders-Table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 556px;
+  border: none;
+}
+
+.MyOrders-Table thead {
+  background-color: #454545;
+  padding: 0 80px;
+  padding-bottom: 80px;
+}
+.MyOrders-Table thead tr {
+  height: 56px;
+}
+.MyOrders-Table thead tr th {
+  font-size: 18px;
+  color: #e7e7e7;
+}
+.header-Container {
+  height: 556px;
+}
+tbody {
+  overflow: hidden;
+  max-height: 556px;
+  padding: 50px;
+}
+
+.header-Container table tbody tr {
+  margin: 20px;
+}
+#th-id{
+    max-width: 150px;
+}
+
+.header-Container table tbody td {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.header-Container table tbody td img {
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 20px;
+  float: right;
+}
+.input-desc {
+  width: 100%;
+}
+.input-desc label {
+  margin: 10px 0 10px 0;
+}
+.input-desc textarea {
+  width: 100%;
+  height: 112px;
+  border-radius: 10px;
+  border: solid 2px #e7e7e7;
+  resize: none;
+  padding: 10px 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.Container-td-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container-td-img div{
+    width: 100px;
+}
+
+.Image-Preview {
+  width: 100%;
+}
+
+.Image-Preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.Group-Inputs-Button{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.preview-container{
+  width: 90px;
+  height: 90px;
+  border: solid 2px #F4F4F4;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container{
+  width: 90px;
+  height: 90px;
+}
+.preview-container svg{
+  color:#C4C4C4;
+}
+
+.label-input-file{
+  z-index: 0;
+  background-color: none;
+  border-radius: 0.8rem;
+  width: 12rem;
+  height: 5rem;
+  transition: all .4s ease;
+  margin-top: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.label-input-file input{
+  width: 8rem;
+}
+.label-input-file label{
+  cursor: pointer;
+  border: 1px dashed #4ECB79;
+  padding: 0.4rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  transition: all .5s ease;
+}
+.label-input-file label:hover{
+  background-color: #c7f7d8;
+}
+#input-file{
+  opacity: 0;
+ position: absolute;
+ z-index: -1;
+}

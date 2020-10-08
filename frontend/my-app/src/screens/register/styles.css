@@ -1,0 +1,26 @@
+.form-container-config {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+.Logo-Container-Config{
+    height: 200px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.Logo-Container-Config img{
+    width: 80%;
+    
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

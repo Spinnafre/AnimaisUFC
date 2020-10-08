@@ -1,0 +1,130 @@
+.content-header{
+    margin-bottom: 2.5rem;
+}
+
+.content-header header{
+    padding: 1rem;
+
+    background: #fff;
+    border-radius: 0.625rem;
+}
+
+.content-header header h3{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.questions-themes{
+    display: flex;
+    flex-direction: column;
+}
+
+.action{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    border: 0px solid;
+    margin-bottom: 1rem;
+    border-radius: .625rem;
+
+    color: #fff;
+    background: #EE5B32;
+
+    cursor: pointer;
+}
+
+.action:hover{
+    background: #FF8A48;
+}
+
+.action:active{
+    background: #C3391A;
+}
+
+.theme-chosen{
+    background: #C3391A;
+}
+
+.theme-chose:active{
+    background: #EE5B32;
+}
+
+.questions{
+    display: none;
+    margin-bottom: 1.5rem;
+    transition: all 0.8s ease;
+}
+
+.questions.visible{
+    display: block;
+}
+
+.questions .question{
+    width: 80vw;
+    margin-bottom: 1rem;
+    border: 1px solid #E7E7E7;
+    border-radius: 0 0 .625rem  .625rem;
+
+    background: #FFF;
+
+    transition: all .2s;
+}
+
+.questions .question button{
+    width: 100%;
+    padding: 1rem;
+    border: 0px solid;
+    border-radius: .625rem; 
+    border-bottom-left-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+
+    color: #000000;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    cursor: pointer;
+
+    transition: all .2s; 
+
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.questions .question button:hover{
+    color: #EE5B32;
+}
+
+.questions .question button img{
+    transition: all .2s ease-in-out;
+    pointer-events:none;
+}
+
+.answer-visible{
+    box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.answer-visible img{
+    transform: rotate(180deg);
+}
+
+.question button h3,
+.question .answer p{
+    font-size: .875rem;
+}
+
+.questions .question .answer{
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.questions .question .answer.visible{
+    display: initial;
+}
+
+.questions .question .answer.visible p{
+    padding: 1rem;
+}
